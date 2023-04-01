@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5u3r1d3i7232"]
+
+[ext_resource type="Script" path="res://ServerEntry.gd" id="1_tew8j"]
+
+[node name="ServerEntry" type="HBoxContainer"]
+custom_minimum_size = Vector2(256, 32)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("1_tew8j")
+
+[node name="LabelDescription" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Server Name
+"
+
+[node name="LabelAddress" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+text = "Server IP
+"
+
+[node name="LabelPort" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+text = "Server Port
+"
+
+[node name="JoinButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.25
+text = "Join"
